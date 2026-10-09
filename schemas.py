@@ -1,8 +1,8 @@
 from pydantic import BaseModel
-from datetime import timezone
+from datetime import date
 
 class ContactCreate(BaseModel):
     name: str
     email: str
     message: str
-    date: str
+    date: date
